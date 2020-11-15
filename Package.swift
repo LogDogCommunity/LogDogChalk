@@ -4,16 +4,16 @@
 import PackageDescription
 
 let package = Package(
-    name: "LogDogColor",
+    name: "LogDogChalk",
     products: [
-        .library(name: "LogDogColor", targets: ["LogDogColor"]),
+        .library(name: "LogDogChalk", targets: ["LogDogChalk"]),
     ],
     dependencies: [
         .package(url: "https://github.com/luoxiu/LogDog.git", .branch("master")),
         .package(url: "https://github.com/luoxiu/Chalk", from: "0.2.0")
     ],
     targets: [
-        .target(name: "LogDogColor", dependencies: ["LogDog", "Chalk"]),
-        .testTarget(name: "LogDogColorTests", dependencies: ["LogDogColor"]),
+        .target(name: "LogDogChalk", dependencies: ["LogDog", "Chalk"]),
+        .testTarget(name: "LogDogChalkTests", dependencies: ["LogDogChalk"]),
     ]
 )

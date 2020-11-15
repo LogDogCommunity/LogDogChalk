@@ -1,6 +1,6 @@
 import XCTest
 import LogDog
-@testable import LogDogColor
+@testable import LogDogChalk
 
 func test(_ logger: Logger) {
     logger.t("POST /users", metadata: ["body": ["name": "秋"]])
@@ -20,7 +20,7 @@ func test(_ logger: Logger) {
 }
 
 
-final class LogDogColorTests: XCTestCase {
+final class LogDogChalkTests: XCTestCase {
     func testExample() {
         let logger = Logger(label: "App") { label in
             let sink = LogFormatters.BuiltIn(style: .medium).suffix("\n").color()

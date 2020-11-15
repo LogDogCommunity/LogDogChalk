@@ -2,13 +2,13 @@ import LogDog
 import Chalk
 
 public extension LogSink where Output == String {
-    func color(_ color: @escaping (Logger.Level) -> TerminalColor = LogFormatters.Color.preferredColor(for:)) -> LogSinks.Concat<Self, LogFormatters.Color> {
+    func color(_ color: @escaping (Logger.Level) -> TerminalColor = LogFormatters.Chalk.preferredColor(for:)) -> LogSinks.Concat<Self, LogFormatters.Chalk> {
         self + .init(color: color)
     }
 }
 
 public extension LogFormatters {
-    struct Color: LogSink {
+    struct Chalk: LogSink {
         public typealias Input = String
         public typealias Output = String
         
@@ -26,7 +26,7 @@ public extension LogFormatters {
     }
 }
 
-extension LogFormatters.Color {
+extension LogFormatters.Chalk {
     public static func preferredColor(for level: Logger.Level) -> Color {
         switch level {
         case .trace:

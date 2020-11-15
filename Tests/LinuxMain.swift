@@ -1,7 +1,8 @@
 import XCTest
 
-import LogDogColorTests
+import LogDogChalkTests
 
 var tests = [XCTestCaseEntry]()
-tests += LogDogColorTests.allTests()
+tests += LogDogChalkTests.__allTests()
+
 XCTMain(tests)

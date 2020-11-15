@@ -1,9 +1,11 @@
-# Color
+# LogDogChalk
 
 Color the output of LogDog.
 
 ![](demo.png)
 
+
+## Usage
 
 ```swift
 let logger = Logger(label: "App") { label in
