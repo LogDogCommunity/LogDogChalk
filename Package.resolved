@@ -1,0 +1,43 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Chalk",
+        "repositoryURL": "https://github.com/luoxiu/Chalk",
+        "state": {
+          "branch": null,
+          "revision": "7013b728ce8dd291b414b3fdc032e72e1daf1927",
+          "version": "0.2.0"
+        }
+      },
+      {
+        "package": "LogDog",
+        "repositoryURL": "https://github.com/luoxiu/LogDog.git",
+        "state": {
+          "branch": "master",
+          "revision": "6444273099608c5ca3118c5e24c1650436a612cd",
+          "version": null
+        }
+      },
+      {
+        "package": "Rainbow",
+        "repositoryURL": "https://github.com/luoxiu/Rainbow",
+        "state": {
+          "branch": null,
+          "revision": "9d8fcb4c64e816a135c31162a0c319e9f1f09c35",
+          "version": "0.1.1"
+        }
+      },
+      {
+        "package": "swift-log",
+        "repositoryURL": "https://github.com/apple/swift-log.git",
+        "state": {
+          "branch": null,
+          "revision": "173f567a2dfec11d74588eea82cecea555bdc0bc",
+          "version": "1.4.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
