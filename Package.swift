@@ -10,7 +10,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/luoxiu/LogDog.git", .branch("master")),
-        .package(url: "https://github.com/luoxiu/Chalk", from: "0.2.0")
+        .package(url: "https://github.com/luoxiu/Chalk", from: "0.2.0"),
     ],
     targets: [
         .target(name: "LogDogChalk", dependencies: ["LogDog", "Chalk"]),

@@ -6,8 +6,8 @@
         "repositoryURL": "https://github.com/luoxiu/Chalk",
         "state": {
           "branch": null,
-          "revision": "7013b728ce8dd291b414b3fdc032e72e1daf1927",
-          "version": "0.2.0"
+          "revision": "8a9d3373bd754fb62f7881d9f639d376f5e4d5a5",
+          "version": "0.2.1"
         }
       },
       {
@@ -15,7 +15,7 @@
         "repositoryURL": "https://github.com/luoxiu/LogDog.git",
         "state": {
           "branch": "master",
-          "revision": "6444273099608c5ca3118c5e24c1650436a612cd",
+          "revision": "face5b4a6aae83ffd19d39e2a4a55e23a7ee255b",
           "version": null
         }
       },

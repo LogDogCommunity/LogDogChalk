@@ -1,6 +1,6 @@
-import XCTest
 import LogDog
 @testable import LogDogChalk
+import XCTest
 
 func test(_ logger: Logger) {
     logger.t("POST /users", metadata: ["body": ["name": "秋"]])
@@ -19,14 +19,13 @@ func test(_ logger: Logger) {
     logger.c("can not connect to db")
 }
 
-
 final class LogDogChalkTests: XCTestCase {
     func testExample() {
         let logger = Logger(label: "App") { label in
-            let sink = LogFormatters.BuiltIn(style: .medium).suffix("\n").color()
+            let sink = LogSinks.BuiltIn.medium.suffix("\n").color()
             return SugarLogHandler(label: label, sink: sink, appender: TextLogAppender.stdout)
         }
-        
+
         test(logger)
     }
 
